@@ -7,7 +7,8 @@ export const FirstLevelRoute = ({
   imageLogoSrc,
 }: any) => {
   console.log(1);
-  const displaySubtitle = level == "0" ? "none" : "flex";
+  // const displaySubtitle = level == "0" ? "none" : "flex";
+  const displaySubtitle = "flex";
   return (
     <div
       style={{
@@ -37,7 +38,6 @@ export const FirstLevelRoute = ({
         src={imageSrc}
         alt="sadsadas"
       />
-
       {/* <div
         style={{
           position: "absolute",
@@ -50,7 +50,6 @@ export const FirstLevelRoute = ({
       >
         s
       </div> */}
-
       <img
         className="MainLogo"
         height={113}
@@ -66,7 +65,6 @@ export const FirstLevelRoute = ({
         src={imageLogoSrc}
         alt="sadsadas"
       />
-
       {/* subtitle  */}
       <span
         className="SmTitle-wrapper"
@@ -122,7 +120,6 @@ export const FirstLevelRoute = ({
           {" "}
         </span>
       </span>
-
       <span
         style={{
           position: "relative",
@@ -142,9 +139,35 @@ export const FirstLevelRoute = ({
         }}
       >
         {title}
-      </span>
-
+      </span>{" "}
+      <Test />
+      {/* <h2>Koffe king</h2> */}
       {/* <Svg /> */}
     </div>
+  );
+};
+
+export const Test = () => {
+  return (
+    <span
+      style={{
+        position: "relative",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        fontFamily: "Poppins-Bold",
+        color: "white",
+        fontSize: "52px",
+        maxWidth: "701px",
+        marginTop: "4.6px",
+        // height: "36.88px",
+        //   width: "399.38px ",
+        //   left: "387.2px",
+        //   top: "200.74px",
+      }}
+    >
+      Hello jack hie
+    </span>
   );
 };
